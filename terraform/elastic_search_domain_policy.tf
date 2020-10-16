@@ -1,7 +1,4 @@
-resource "aws_elasticsearch_domain" "songs" {
-  domain_name           = "tf-test"
-  elasticsearch_version = "6.8"
-}
+
 
 resource "aws_elasticsearch_domain_policy" "main" {
   domain_name = aws_elasticsearch_domain.songs.domain_name

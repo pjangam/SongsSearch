@@ -39,7 +39,7 @@ resource "aws_lex_intent" "order_flowers_intent" {
 
     slot_constraint   = "Required"
     slot_type         = "ArtistName"
-    slot_type_version = "$$LATEST"
+    slot_type_version = "1"
 
     value_elicitation_prompt {
       max_attempts = 2
@@ -62,7 +62,7 @@ resource "aws_lex_intent" "order_flowers_intent" {
 
     slot_constraint   = "Required"
     slot_type         = "AMAZON.DATE"
-    slot_type_version = "$$LATEST"
+    slot_type_version = "1"
 
     value_elicitation_prompt {
       max_attempts = 2
@@ -85,7 +85,7 @@ resource "aws_lex_intent" "order_flowers_intent" {
 
     slot_constraint   = "Required"
     slot_type         = "AMAZON.TIME"
-    slot_type_version = "$$LATEST"
+    slot_type_version = "1"
 
     value_elicitation_prompt {
       max_attempts = 2

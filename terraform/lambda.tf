@@ -29,7 +29,7 @@ resource "aws_lambda_function" "test_lambda" {
   # source_code_hash = "${base64sha256(file("lambda_function_payload.zip"))}"
   source_code_hash = filebase64sha256("lambda_function_payload.zip")
 
-  runtime = ".NET Core 3.1 (C#/PowerShell)"
+  runtime = "dotnetcore3.1"
 
   environment {
     variables = {

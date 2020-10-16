@@ -1,3 +1,5 @@
 *.tfvars
 obj/
 bin/
+terraform/lambda_function_payload.zip
+.vs/
